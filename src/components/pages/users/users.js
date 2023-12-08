@@ -14,7 +14,6 @@ const User = () => {
           <img src={MoptroLogo} />
           <div className="count-con">4</div>
         </div>
-
         <div className="search-bar-con">
             <input type="text" placeholder="Search With Name"/>
             <img src={SearchLogo} className="search-logo"/>

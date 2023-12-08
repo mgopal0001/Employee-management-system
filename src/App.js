@@ -1,10 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import {routes}from "./Routes"
-import { Route, Routes } from "react-router-dom";
+import { routes } from "./Routes";
+import { useLocation, Route, Routes } from "react-router-dom";
 import BottomPanel from "./components/shared/bottomPanel/BottomPanel";
 
 function App() {
+  const location = useLocation();
   return (
     <div className="App">
       <Routes>
@@ -12,7 +13,7 @@ function App() {
           return <Route path={path} element={component} key={index} />;
         })}
       </Routes>
-      <BottomPanel/>
+      {location.pathname !== "/" && <BottomPanel />}
     </div>
   );
 }

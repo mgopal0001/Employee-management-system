@@ -1,0 +1,26 @@
+[
+    {
+        "empId":"1",
+        "name":"Arjun",
+        "DOB":"16-01-2020",
+        "Role":"Software Engineer",
+        "email":"arjun@gmail.com",
+        "password":"123456"
+    },
+    {
+        "empId":"2",
+        "name":"Madan",
+        "DOB":"28-04-1999",
+        "Role":"Software Engineer",
+        "email":"madan@gmail.com",
+        "password":"123456"
+    },
+    {
+        "empId":"3",
+        "name":"Sumit",
+        "DOB":"16-01-1998",
+        "Role":"Software Engineer",
+        "email":"sumit@gmail.com",
+        "password":"123456"
+    }
+]
