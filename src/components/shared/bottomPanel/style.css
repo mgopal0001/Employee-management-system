@@ -26,4 +26,11 @@
       height: 64px;
     }
   }
+  .active {
+    
+    background: #38383880 0% 0% no-repeat padding-box;
+    mix-blend-mode: normal;
+    border-radius: 28px;
+  }
+  
 }
