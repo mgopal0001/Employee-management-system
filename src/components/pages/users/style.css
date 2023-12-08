@@ -1,0 +1,89 @@
+.user-page-container {
+  .nav-con {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+  @media (max-width: 768px) {
+    .nav-con img {
+      width: 64px;
+      height: 64px;
+    }
+  }
+  .motpro-logo-con {
+    position: relative;
+    width: fit-content;
+    padding: 15px;
+    margin: auto;
+    .count-con {
+      color: #36a546;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: #5e5e5eb5 0% 0% no-repeat padding-box;
+      border-radius: 50px;
+      padding: 7px 10px;
+      font-size: 10px;
+      border: 1px solid #fffefe00;
+    }
+  }
+  .search-bar-con {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    background: #5e5e5e82 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 4px 0px #00000040;
+    mix-blend-mode: normal;
+    border: 1px solid #595959;
+    border-radius:28px;
+    
+    .search-logo {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .employee-card-con {
+    color:white;
+    background: #5E5E5E82 0% 0% no-repeat padding-box;
+    width:fit-content;
+    margin:40px auto;
+    padding:20px;
+    border-radius: 28px;
+    text-align: left;
+    position:relative;
+    .orange {
+        color:#87591c;
+        font-weight:800;
+    }
+    .green {
+        color:#2a7e39;
+        font-weight:800;
+    }
+    .serial-con{
+        position:absolute;
+        border:1px solid black;
+        border-radius: 50px;
+        padding:4px 10px;
+        top:10px;
+        right:10px;
+    }
+  }
+
+}
+
+input[type="text"] {
+   
+    border: none; /* Remove the input border */
+    background-color:transparent; /* Set the background color */
+    mix-blend-mode: normal; /* If needed, adjust blend mode */
+    color:white;
+    font-weight: 800;
+
+}
+input[type="text"]:focus {
+    background-color: transparent;
+    outline: none; /* Remove the default focus outline if you want */
+}
