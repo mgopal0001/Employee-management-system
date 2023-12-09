@@ -40,7 +40,11 @@ const Login = () => {
   };
 
   useEffect(() => {
-    handleLogin();
+
+    if (user.email.trim() !== "" && user.password.trim() !== "") {
+      handleLogin();
+    }
+
   }, []);
 
   return (
