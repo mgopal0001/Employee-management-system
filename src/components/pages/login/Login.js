@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 const users = require("../../../constants/userData.json");
 
+
 const INITIAL_STATE_OF_USER = {
   email: "",
   password: "",
@@ -12,6 +13,7 @@ const INITIAL_STATE_OF_USER = {
 const Login = () => {
   const [user, setUser] = useState(INITIAL_STATE_OF_USER);
   const navigate = useNavigate();
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (e) => {
     setUser((prevState) => {
@@ -29,6 +31,11 @@ const Login = () => {
 
     if (found) {
       navigate("/home");
+    } else {
+      setErrorMessage("Invalid email or password Please try again");
+      setTimeout(() => {
+        setErrorMessage("");
+      }, 2000);
     }
   };
 
@@ -64,6 +71,7 @@ const Login = () => {
             Login
           </button>
         </div>
+        {errorMessage && <div className="error-message">{errorMessage}</div>}
         <div className="forgot-password-con">Forgot Password?</div>
       </div>
     </>

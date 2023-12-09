@@ -29,6 +29,7 @@
   .active {
     
     background: #38383880 0% 0% no-repeat padding-box;
+    box-shadow: #38383880 0 0px 20px;
     mix-blend-mode: normal;
     border-radius: 28px;
   }

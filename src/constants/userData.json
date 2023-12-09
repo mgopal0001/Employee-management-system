@@ -22,5 +22,13 @@
         "Role":"Software Engineer",
         "email":"sumit@gmail.com",
         "password":"123456"
+    },
+    {
+        "empId":"4",
+        "name":"Mahesh",
+        "DOB":"12-01-2020",
+        "Role":"Software Engineer",
+        "email":"Mahesh@gmail.com",
+        "password":"123456"
     }
 ]
